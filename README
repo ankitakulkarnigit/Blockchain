@@ -1,9 +1,35 @@
-Instructions:
+Project 3: BlockChain
 
-Paste your code i.e. BlockChain.java in this directory and run using the following set of commands
+In this project we implemented a node that’s part of a block-chain-based distributed consensus protocol. Our code will receive incoming transactions and blocks and maintain an updated block chain.
 
-1) javac -cp blockChainGrader.jar;algs4.jar;rsa.jar;. DropboxTestBlockChain.java
-2) java -cp blockChainGrader.jar;rsa.jar;. DropboxTestBlockChain
+Files provided:
+1. Block.java - Stores the block data structure.
+2. BlockHandler.java - Uses BlockChain.java to process a newly received block, create a new block, or process a newly received transaction.
+3. ByteArrayWrapper.java - A utility file which creates a wrapper for byte arrays such that it could be used as a key in hash functions. (See TransactionPool.java )
+4. Transaction.java - This is similar to Transaction.java as provided in Project 1 (https://github.com/ankitakulkarnigit/ScroogeCoin) except for introducing functionality to create a coinbase transaction. Take a look at Block.java constructor to see how a coinbase transaction is created.
+5. TransactionPool.java - Implements a pool of transactions, required when creating a new block.
+6. UTXO.java From Project 1 (https://github.com/ankitakulkarnigit/ScroogeCoin).
+7. UTXOPool.java From Project 1 (https://github.com/ankitakulkarnigit/ScroogeCoin).
+
+CPSC-459 
+Team Member1.	  Mohit Kumar Cwid :887598266 mohit_kumar@csu.ullerton.edu
+Team Member2. 	Ankita Udaykumar Kulkarni Cwid:887871861 ankitak@csu.fullerton.edu
+Team Member3. 	Anuj R. Dhoot Cwid: 887450005
+Team Member4.   Ryan Vo Cwid:888904216 rvo7496@csu.fullerton.edu
+
+
+How to execute your program. 
+
+	Unzip folder and place in C: 
+	go to grading folder to run below commands from grading folder in Command Prompt
+		
+		For Windows User:
+		1) javac -cp blockChainGrader.jar;algs4.jar;rsa.jar;. DropboxTestBlockChain.java
+		2) java -cp blockChainGrader.jar;rsa.jar;. DropboxTestBlockChain
+
+		For MAC User:
+		1) javac -cp blockChainGrader.jar:algs4.jar:rsa.jar:. DropboxTestBlockChain.java
+		2) java -cp blockChainGrader.jar:rsa.jar:. DropboxTestBlockChain
 
 Jar Files:
 
